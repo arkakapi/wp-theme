@@ -1,0 +1,68 @@
+/*
+Theme Name: Arka Kapı Magazine
+Theme URI: https://github.com/arkakapi
+Author: Omer Citak
+Author URI: https://omercitak.com/
+Description:
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: arkakapi, arka kapi, arka kapi magazine, arka kapi dergi
+Text Domain: arkakapi
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.dropdown {
+    float: left;
+    margin-right: 10px;
+}
+
+ul.dropdown-menu li a {
+    text-transform: capitalize;
+}
+
+.issues-tab li a {
+    font-size: 20px;
+}
+
+.content-title {
+    text-align: center;
+    padding: 0;
+}
+
+.hs-line-11 {
+    letter-spacing: 0.2em;
+    line-height: 1.4;
+}
+
+.blog-item-title, .blog-item-data {
+    text-transform: none;
+}
+
+span.page-numbers {
+    display: inline-block;
+    min-width: 30px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 7px 14px;
+    border: 1px solid #eaeaea;
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+span.current {
+    border-color: #bbb;
+    color: #444;
+    cursor: default;
+}
