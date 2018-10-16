@@ -1,48 +1,49 @@
-    <!-- Footer -->
-    <footer class="page-section bg-gray-lighter footer pb-60">
-        <div class="container">
+<?php wp_footer(); ?>
+<!-- Footer -->
+<footer class="page-section bg-gray-lighter footer pb-60">
+    <div class="container">
 
-            <!-- Footer Logo -->
-            <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-                <a href="#top"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-footer.png" width="78" height="36" alt=""/></a>
+        <!-- Footer Logo -->
+        <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
+            <a href="#top"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-footer.png" width="78" height="36" alt=""/></a>
+        </div>
+        <!-- End Footer Logo -->
+
+        <!-- Social Links -->
+        <div class="footer-social-links mb-110 mb-xs-60">
+            <a href="https://twitter.com/arkakapimag" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://facebook.com/arkakapimag" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/arkakapimag" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <!-- End Social Links -->
+
+        <!-- Footer Text -->
+        <div class="footer-text">
+
+            <!-- Copyright -->
+            <div class="footer-copy font-alt">
+                &copy; ARKA KAPI MAGAZINE <?php echo date( 'Y' ); ?>.
             </div>
-            <!-- End Footer Logo -->
+            <!-- End Copyright -->
 
-            <!-- Social Links -->
-            <div class="footer-social-links mb-110 mb-xs-60">
-                <a href="https://twitter.com/arkakapimag" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a href="https://facebook.com/arkakapimag" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="https://instagram.com/arkakapimag" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+            <div class="footer-made">
+                The hacktivist was made by a group of people.
             </div>
-            <!-- End Social Links -->
-
-            <!-- Footer Text -->
-            <div class="footer-text">
-
-                <!-- Copyright -->
-                <div class="footer-copy font-alt">
-                    &copy; ARKA KAPI MAGAZINE <?php echo date( 'Y' ); ?>.
-                </div>
-                <!-- End Copyright -->
-
-                <div class="footer-made">
-                    The hacktivist was made by a group of people.
-                </div>
-
-            </div>
-            <!-- End Footer Text -->
 
         </div>
+        <!-- End Footer Text -->
+
+    </div>
 
 
-        <!-- Top Link -->
-        <div class="local-scroll">
-            <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-        </div>
-        <!-- End Top Link -->
+    <!-- Top Link -->
+    <div class="local-scroll">
+        <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+    </div>
+    <!-- End Top Link -->
 
-    </footer>
-    <!-- End Footer -->
+</footer>
+<!-- End Footer -->
 
 </div>
 <!-- End Page Wrap -->
@@ -72,6 +73,8 @@
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.ajaxchimp.min.js"></script>
 <!--[if lt IE 10]>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/placeholder.js"></script><![endif]-->
+
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5bc64da80c55ed0011c0228a&product=inline-share-buttons' async='async'></script>
 
 </body>
 </html>

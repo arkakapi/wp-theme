@@ -32,6 +32,8 @@
                 </div>
                 <!-- End Text -->
 
+                <div class="sharethis-inline-share-buttons"></div>
+
             </div>
             <!-- End Content -->
 
