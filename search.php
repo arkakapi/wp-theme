@@ -20,7 +20,7 @@
 
         <div class="row">
 
-			<?php get_template_part( 'template/content', 'list' ); ?>
+			<?php get_template_part( 'template-parts/content', 'list' ); ?>
 
 			<?php get_sidebar(); ?>
 
