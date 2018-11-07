@@ -63,14 +63,7 @@
             </div>
             <!-- Main Menu -->
             <div class="inner-nav desktop-nav">
-                <ul class="clearlist scroll-nav local-scroll">
-                    <li><a href="<?php echo get_site_url(); ?>/#home">HOME</a></li>
-                    <li><a href="<?php echo get_site_url(); ?>/#about">ABOUT US</a></li>
-                    <li><a href="<?php echo get_site_url(); ?>/#issues">ISSUES</a></li>
-                    <li><a href="<?php echo get_site_url(); ?>/#subscription">SUBSCRIPTIONS</a></li>
-                    <li><a href="<?php echo get_site_url(); ?>/#contact">CONTACT</a></li>
-                    <li><a href="<?php echo get_site_url(); ?>/blog">BLOG</a></li>
-                </ul>
+				<?php wp_nav_menu( [ 'menu_class' => 'clearlist scroll-nav local-scroll' ] ); ?>
             </div>
         </div>
     </nav>

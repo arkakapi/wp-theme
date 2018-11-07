@@ -66,3 +66,12 @@ span.current {
     color: #444;
     cursor: default;
 }
+
+nav ul li a {
+    height: 75px;
+    line-height: 75px;
+}
+
+.wpcf7-form > div.clearfix > div.cf-right-col > div > span > textarea {
+    height: 84px;
+}
