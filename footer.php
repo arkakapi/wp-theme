@@ -25,12 +25,12 @@
 
             <!-- Copyright -->
             <div class="footer-copy font-alt">
-                &copy; ARKA KAPI MAGAZINE <?php echo date( 'Y' ); ?>.
+                &copy; <?php echo bloginfo( 'blog_name' ) . ' ' . date( 'Y' ); ?>.
             </div>
             <!-- End Copyright -->
 
             <div class="footer-made">
-                The hacktivist was made by a group of people.
+				<?php echo __( 'The hacktivist was made by a group of people.', 'arkakapi' ); ?>
             </div>
 
         </div>

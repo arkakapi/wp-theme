@@ -27,7 +27,7 @@
 
                     <!-- Read More Link -->
                     <div class="blog-item-foot">
-                        <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-mod btn-round  btn-small">Read More <i class="fa fa-angle-right"></i></a>
+                        <a href="<?php echo esc_url( get_permalink() ); ?>" class="btn btn-mod btn-round  btn-small"><?php echo __( 'READ MORE', 'arkakapi' ); ?> <i class="fa fa-angle-right"></i></a>
                     </div>
 
                 </div>
@@ -38,7 +38,7 @@
             <!-- Post -->
             <div class="blog-item">
                 <!-- Post Title -->
-                <h2 class="blog-item-title font-alt">Sorry, we don't found any post.</h2>
+                <h2 class="blog-item-title font-alt"><?php echo __( "Sorry, we don't found any post.", 'arkakapi' ); ?></h2>
             </div>
             <!-- End Post -->
 		<?php endif; ?>

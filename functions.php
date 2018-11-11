@@ -31,7 +31,7 @@ function arkakapi_setup() {
 
 	register_nav_menus( [
 		'navigation'    => __( 'Navigation Menu', 'arkakapi' ),
-		'footer_social' => __( 'Footer Social Icons', 'arkakapi' ),
+		'footer_social' => __( 'Footer Social Icons Menu', 'arkakapi' ),
 	] );
 
 }

@@ -6,7 +6,7 @@
 
         <div class="row">
             <div class="col-md-12 content-title">
-                <h1 class="hs-line-11 font-alt mb-20 mb-xs-0">ARKA KAPI MAGAZINE BLOG</h1>
+                <h1 class="hs-line-11 font-alt mb-20 mb-xs-0"><?php echo bloginfo( 'blog_name' ) . ' BLOG'; ?></h1>
             </div>
         </div>
 

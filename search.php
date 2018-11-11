@@ -6,7 +6,7 @@
 
         <div class="row">
             <div class="col-md-12 content-title">
-                <h1 class="hs-line-11 font-alt mb-20 mb-xs-0"><?php printf( __( 'Search Results for: %s', 'arkakapi' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h1>
+                <h1 class="hs-line-11 font-alt mb-20 mb-xs-0"><?php printf( __( 'SEARCH: %s', 'arkakapi' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h1>
             </div>
         </div>
 

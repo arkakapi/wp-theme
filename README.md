@@ -1,6 +1,3 @@
-- menuler eklenecek
-- example export edilecek
-
 # Arka Kapi Magazine Wordpress Theme
 
 This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](https://github.com/om3rcitak)
@@ -18,6 +15,7 @@ This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](h
 ```sh
 $ cd wp-content/themes
 $ git clone https://github.com/arkakapi/wp-theme/ arkakapi
+$ cp arkakapi/languages/* ../languages/themes/
 ```
 
 4- Enable Theme
@@ -25,25 +23,21 @@ $ git clone https://github.com/arkakapi/wp-theme/ arkakapi
 - Click "Activate" button on the "Arka Kapi Magazine" theme
 
 5- Enable Required Plugins
-- Login wp-admin
-- Go to "Plugins" page
-- Click "Add New" button
-- Search "wonderm00ns-simple-facebook-open-graph-tags" and activate plugin.
-- Search "contact-form-7" and activate plugin.
-- Search "advanced-custom-fields" and activate plugin.
+- Install and activate "Open Graph for Facebook, Google+ and Twitter Card Tags" plugin. [plugin link](https://wordpress.org/plugins/wonderm00ns-simple-facebook-open-graph-tags/)
+- Install and activate "Contact Form 7" plugin. [plugin link](https://wordpress.org/plugins/contact-form-7/)
+- Install and activate "ACF Pro" plugin. [plugin link](https://www.advancedcustomfields.com/pro/)
 - Go to "Custom Fields > Tools" page and import [custom-fields.json](custom-fields.json) file.
 
-6- Contact Form
+6- Menus
+- Create 2 different menus for Navigation and Footer Social Icons
+- Go to "Appearance > Menus > Manage Locations" page and assign menus to locations.
+
+7- Contact Form
 - Create new "Contact Form 7" form.
 - Paste form ID to "All Pages > Home > Contact > Contact Form 7 Form ID" and save
 
-
-## Required Plugins
-
-- https://wordpress.org/plugins/wonderm00ns-simple-facebook-open-graph-tags/
-- https://wordpress.org/plugins/advanced-custom-fields/
-- https://wordpress.org/plugins/contact-form-7/
-
+## Contributing
+If want to contribute Arka Kapi Wordpress Theme you can create a new issue.
 
 License
 ----
