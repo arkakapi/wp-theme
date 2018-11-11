@@ -6,17 +6,17 @@ This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](h
 
 1- Install clear wordpress.
 
-2- Pages
-- Create a page whose name is "Home".
-- Create a page whose name is "Blog".
-- Go to "Settings > Reading" and set "Homepage" and "Posts page" options.
-   
-3- Clone Theme
-```sh
-$ cd wp-content/themes
-$ git clone https://github.com/arkakapi/wp-theme/ arkakapi
-$ cp arkakapi/languages/* ../languages/themes/
-```
+2- Clone Theme
+   ```sh
+   $ cd wp-content/themes
+   $ git clone https://github.com/arkakapi/wp-theme/ arkakapi
+   $ cp arkakapi/languages/* ../languages/themes/
+   ```
+
+3- Pages
+   - Create a page whose name is "Home".
+   - Create a page whose name is "Blog".
+   - Go to "Settings > Reading" and set "Homepage" and "Posts page" options.
 
 4- Enable Theme
 - Go to "Appearence > Themes" page

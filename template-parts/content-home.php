@@ -223,3 +223,35 @@
     </div>
 </section>
 <!-- End Contact Section -->
+
+<?php
+$sponsors = get_field( 'sponsors' );
+if ( $sponsors ): ?>
+    <!-- Divider -->
+    <hr class="mt-0 mb-0 "/>
+    <!-- End Divider -->
+
+    <!-- Sponsors Section -->
+    <section class="page-section" id="sponsors">
+        <div class="container relative">
+
+            <h2 class="section-title font-alt mb-70 mb-sm-40">
+				<?php the_field( 'sponsors_title' ); ?>
+            </h2>
+
+            <div class="row">
+                <div class="col-xs-12">
+					<?php foreach ( $sponsors as $sponsor ): ?>
+                        <div class="col-xs-6 col-md-<?php echo 12 / count( $sponsors ); ?> sponsor-item col-centered">
+                            <a href="<?php echo $sponsor['description']; ?>" target="_blank">
+                                <img src="<?php echo $sponsor['sizes']['medium']; ?>" alt="<?php echo $sponsor['alt']; ?>"/>
+                            </a>
+                        </div>
+					<?php endforeach; ?>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Sponsors Section -->
+<?php endif; ?>
