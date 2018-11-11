@@ -75,3 +75,16 @@ nav ul li a {
 .wpcf7-form > div.clearfix > div.cf-right-col > div > span > textarea {
     height: 84px;
 }
+
+.footer-social-links div {
+    display: table;
+    margin: 0 auto;
+}
+
+.footer-social-links div ul {
+    list-style: none;
+}
+
+.footer-social-links div ul li {
+    float: left;
+}

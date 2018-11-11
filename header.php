@@ -63,7 +63,10 @@
             </div>
             <!-- Main Menu -->
             <div class="inner-nav desktop-nav">
-				<?php wp_nav_menu( [ 'menu_class' => 'clearlist scroll-nav local-scroll' ] ); ?>
+				<?php wp_nav_menu( [
+					'theme_location' => 'navigation',
+					'menu_class'     => 'clearlist scroll-nav local-scroll'
+				] ); ?>
             </div>
         </div>
     </nav>

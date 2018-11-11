@@ -1,3 +1,6 @@
+- menuler eklenecek
+- example export edilecek
+
 # Arka Kapi Magazine Wordpress Theme
 
 This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](https://github.com/om3rcitak)

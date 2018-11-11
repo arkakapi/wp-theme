@@ -99,10 +99,10 @@
                                         <div class="col-sm-12">
                                             <ul class="nav nav-tabs tpl-tabs animate">
                                                 <li class="active">
-                                                    <a href="#issue<?php echo $key; ?>content" data-toggle="tab"><?php the_field( 'issues_content_title' ); ?></a>
+                                                    <a href="#issue<?php echo $key; ?>content" data-toggle="tab">Contents</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#issue<?php echo $key; ?>buy" data-toggle="tab"><?php the_field( 'issues_buy_title' ); ?></a>
+                                                    <a href="#issue<?php echo $key; ?>buy" data-toggle="tab">BUYs</a>
                                                 </li>
                                             </ul>
                                             <div class="tab-content tpl-tabs-cont section-text">

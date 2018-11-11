@@ -29,6 +29,11 @@ function arkakapi_setup() {
 		'comment-list',
 	) );
 
+	register_nav_menus( [
+		'navigation'    => __( 'Navigation Menu', 'arkakapi' ),
+		'footer_social' => __( 'Footer Social Icons', 'arkakapi' ),
+	] );
+
 }
 
 function arkakapi_widgets_init() {
@@ -67,6 +72,18 @@ function get_page_type() {
 function get_nav_class() {
 	return get_page_type() == "home" ? "transparent stick-fixed" : "js-stick";
 }
+
+if ( ! function_exists( 'get_menu_by_location' ) ):
+	function get_menu_by_location( $theme_location, $args = [] ) {
+		$theme_locations = get_nav_menu_locations();
+		$menu_obj        = get_term( $theme_locations[ $theme_location ], 'nav_menu' );
+		if ( $menu_obj ) {
+			return wp_get_nav_menu_items( $menu_obj->term_id, $args );
+		} else {
+			return $menu_obj;
+		}
+	}
+endif;
 
 add_action( 'after_setup_theme', 'arkakapi_setup' );
 add_action( 'widgets_init', 'arkakapi_widgets_init' );

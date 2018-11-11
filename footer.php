@@ -11,9 +11,12 @@
 
         <!-- Social Links -->
         <div class="footer-social-links mb-110 mb-xs-60">
-            <a href="https://twitter.com/arkakapimag" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://facebook.com/arkakapimag" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-            <a href="https://instagram.com/arkakapimag" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+			<?php
+			$menu = get_menu_by_location( 'footer_social' );
+			foreach ( $menu as $item ):
+				echo '<a href="' . $item->url . '" title="' . $item->title . '" target="_blank"><i class="fa fa-' . strtolower( $item->title ) . '"></i></a>';
+			endforeach;
+			?>
         </div>
         <!-- End Social Links -->
 
