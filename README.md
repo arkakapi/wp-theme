@@ -15,7 +15,7 @@ This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](h
 And if you wanna get all update please add "git-pull-job.sh" file to crontab.
  
 ```sh
-* * * * * /bin/bash /pat/to/arkakapi/git-pull-job.sh
+* * * * * /bin/bash /path/to/arkakapi/git-pull-job.sh
 ```
 
 3- Pages
