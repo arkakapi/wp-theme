@@ -12,6 +12,11 @@ This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](h
    $ git clone https://github.com/arkakapi/wp-theme/ arkakapi
    $ cp arkakapi/languages/* ../languages/themes/
    ```
+And if you wanna get all update please add "git-pull-job.sh" file to crontab.
+ 
+```sh
+* * * * * /bin/bash /pat/to/arkakapi/git-pull-job.sh
+```
 
 3- Pages
    - Create a page whose name is "Home".
