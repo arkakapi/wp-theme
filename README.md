@@ -15,7 +15,7 @@ This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](h
 And if you wanna get all updates please add "git-pull-job.sh" file to crontab.
  
 ```sh
-* * * * * git pull origin master
+* * * * * cd /path/to/wordpress/wp-content/themes/arkakapi/ && git pull origin master
 ```
 
 3- Pages
