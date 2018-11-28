@@ -633,5 +633,47 @@
         "hide_on_screen": "",
         "active": 1,
         "description": ""
+    },
+	{
+        "key": "group_5bfefe091a8f7",
+        "title": "Add New Post > Author Name",
+        "fields": [
+            {
+                "key": "field_5bfefe184b49b",
+                "label": "Author Name",
+                "name": "author_name",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Arka Kapı Magazine",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 7,
+        "position": "acf_after_title",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
     }
 ]
