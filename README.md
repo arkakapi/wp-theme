@@ -12,7 +12,7 @@ This theme developed for arkakapidergi.com and arkakapimag.com by [@om3rcitak](h
    $ git clone https://github.com/arkakapi/wp-theme/ arkakapi
    $ cp arkakapi/languages/* ../languages/themes/
    ```
-And if you wanna get all update please add "git-pull-job.sh" file to crontab.
+And if you wanna get all updates please add "git-pull-job.sh" file to crontab.
  
 ```sh
 * * * * * /bin/bash /path/to/arkakapi/git-pull-job.sh
