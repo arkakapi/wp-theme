@@ -1,13 +1,19 @@
+<?php
+if (get_the_author()) {
+    header('Location: ' . get_site_url());
+    die();
+}
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="utf-8">
     <meta name="author" content="omer citak <@om3rcitak>">
 
-	<?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
-        <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<?php endif; ?>
-	<?php wp_head(); ?>
+    <?php if (is_singular() && pings_open(get_queried_object())) : ?>
+        <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+    <?php endif; ?>
+    <?php wp_head(); ?>
 
     <!--[if IE]>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -18,7 +24,8 @@
 
     <!-- CSS -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-responsive.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
@@ -63,10 +70,10 @@
             </div>
             <!-- Main Menu -->
             <div class="inner-nav desktop-nav">
-				<?php wp_nav_menu( [
-					'theme_location' => 'navigation',
-					'menu_class'     => 'clearlist scroll-nav local-scroll'
-				] ); ?>
+                <?php wp_nav_menu([
+                    'theme_location' => 'navigation',
+                    'menu_class' => 'clearlist scroll-nav local-scroll'
+                ]); ?>
             </div>
         </div>
     </nav>
