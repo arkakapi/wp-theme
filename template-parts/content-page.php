@@ -8,7 +8,7 @@
             <div class="col-md-12 content-title">
 				<?php the_title( '<h1 class="hs-line-11 font-alt mb-20 mb-xs-0">', '</h1>' ); ?>
 				<?php if ( get_post_type( get_the_ID() ) == 'post' ): ?>
-                    <div class="hs-line-4 font-alt black"><?php echo get_the_author(); ?></div>
+                    <div class="hs-line-4 font-alt black"><?php the_field( 'author_name' ); ?></div>
 				<?php endif; ?>
             </div>
         </div>

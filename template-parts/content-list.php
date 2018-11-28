@@ -16,7 +16,7 @@
                     <div class="blog-item-data">
                         <i class="fa fa-clock-o"></i> <?php echo get_the_date(); ?>
                         <span class="separator">&nbsp;</span>
-                        <i class="fa fa-user"></i> <?php echo get_the_author(); ?>
+                        <i class="fa fa-user"></i> <?php the_field( 'author_name' ); ?>
                         <span class="separator">&nbsp;</span>
                     </div>
 
