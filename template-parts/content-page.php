@@ -40,7 +40,8 @@
         </div>
 </section>
 <!-- End Section -->
-	
+
+<?php if ( get_post_type( get_the_ID() ) == 'post' &&  !empty(get_field( 'title' ))): ?>
 <!-- Modal -->
 <div id="buyModal" class="modal fade" role="dialog">
 	<div class="modal-dialog">
@@ -62,3 +63,4 @@
 	</div>
 </div>
 <!-- Modal End -->
+<?php endif; ?>
