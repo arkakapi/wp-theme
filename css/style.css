@@ -293,7 +293,6 @@ a:active {
 img:not([draggable]), embed, object, video {
     max-width: 100%;
     height: auto;
-    border: 1px #000 dashed;
 }
 
 
