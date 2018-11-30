@@ -92,3 +92,7 @@ nav ul li a {
 .sponsor-item {
     text-align: center;
 }
+
+.wpcf7-recaptcha {
+    float: left;
+}
