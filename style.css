@@ -96,3 +96,7 @@ nav ul li a {
 .wpcf7-recaptcha {
     float: left;
 }
+
+img.dashed {
+    border: 1px #000 dashed;
+}
