@@ -59,6 +59,12 @@
         
     });
     
+    if (($('#buyModal').length > 0) && document.cookie.indexOf('visited=true') == -1){
+            $('#buyModal').modal({show:true});
+            var year = 1000*60*60*24*365;
+            var expires = new Date((new Date()).valueOf() + year);
+            document.cookie = "visited=true;expires=" + expires.toUTCString();
+    }
     
     /* --------------------------------------------
      Platform detect
