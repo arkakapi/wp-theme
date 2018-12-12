@@ -100,3 +100,11 @@ nav ul li a {
 img.dashed {
     border: 1px #000 dashed;
 }
+
+.tribe-events-list-widget .tribe-event-title {
+    font-size: 14px;
+}
+
+.tribe-events-list-widget .tribe-list-widget {
+    padding: 0;
+}
