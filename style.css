@@ -99,6 +99,8 @@ nav ul li a {
 
 img.dashed {
     border: 1px #000 dashed;
+    margin: 0 auto;
+    display: block;
 }
 
 .tribe-events-list-widget .tribe-event-title {
@@ -107,4 +109,23 @@ img.dashed {
 
 .tribe-events-list-widget .tribe-list-widget {
     padding: 0;
+}
+
+.issue-content {
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.issue-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.issue-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.issue-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }

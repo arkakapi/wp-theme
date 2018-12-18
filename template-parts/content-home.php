@@ -106,7 +106,7 @@
                                                 </li>
                                             </ul>
                                             <div class="tab-content tpl-tabs-cont section-text">
-                                                <div class="tab-pane fade in active" id="issue<?php echo $key; ?>content">
+                                                <div class="tab-pane fade in active issue-content" id="issue<?php echo $key; ?>content">
 													<?php echo $val['content']; ?>
                                                 </div>
                                                 <div class="tab-pane fade" id="issue<?php echo $key; ?>buy">
