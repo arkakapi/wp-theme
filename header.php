@@ -62,7 +62,7 @@ if (get_the_author()) {
         <div class="full-wrapper relative clearfix">
             <div class="nav-logo-wrap local-scroll">
                 <a href="<?php echo get_site_url(); ?>/#top" class="logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-white.png" alt=""/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/site_white.png" alt=""/>
                 </a>
             </div>
             <div class="mobile-nav">

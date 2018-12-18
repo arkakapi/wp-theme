@@ -5,7 +5,7 @@
 
         <!-- Footer Logo -->
         <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.2s">
-            <a href="#top"><img src="<?php echo get_template_directory_uri(); ?>/images/logo-footer.png" width="78" height="36" alt=""/></a>
+            <a href="#top"><img src="<?php echo get_template_directory_uri(); ?>/images/site_black.png" width="78" height="36" alt=""/></a>
         </div>
         <!-- End Footer Logo -->
 
