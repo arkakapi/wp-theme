@@ -178,6 +178,58 @@
 <hr class="mt-0 mb-0 " />
 <!-- End Divider -->
 
+<!-- Latest Blogposts Section -->
+<section class="page-section" id="news">
+    <div class="container relative">
+
+        <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+            <?php echo __('Latest Blogposts', 'arkakapi'); ?>
+            <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>" class="section-more right"><?php echo __('See All Blogposts', 'arkakapi'); ?><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        </h2>
+
+        <div class="row multi-columns-row">
+
+            <?php
+            $latest_posts = wp_get_recent_posts([
+                'numberposts' => 3,
+                'post_status' => 'publish'
+            ]);
+            ?>
+
+            <?php foreach ($latest_posts as $post) : ?>
+                <!-- Post Item -->
+                <div class="col-lg-12 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.1s; animation-name: fadeIn;">
+
+                    <div class="post-prev-title font-alt">
+                        <a href="<?php echo esc_url(get_permalink($post['ID'])); ?>"><?php echo get_the_title($post['ID']); ?></a>
+                    </div>
+
+                    <div class="blog-item-data">
+                        <i class="fa fa-clock-o"></i> <?php echo get_the_date(null, $post['ID']); ?> <span class="separator">&nbsp;</span>
+                        <i class="fa fa-user"></i> <?php the_field('author_name', $post['ID']); ?> <span class="separator">&nbsp;</span>
+                    </div>
+
+                    <div class="post-prev-text text-justify">
+                        <?php echo get_the_excerpt($post['ID']); ?>
+                    </div>
+
+                    <div class="post-prev-more">
+                        <a href="<?php echo esc_url(get_permalink($post['ID'])); ?>" class="btn btn-mod btn-gray btn-round right"><?php echo __('READ MORE', 'arkakapi'); ?> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+
+                </div>
+                <!-- End Post Item -->
+            <?php endforeach; ?>
+
+        </div>
+    </div>
+</section>
+<!-- End Latest Blogposts Section -->
+
+<!-- Divider -->
+<hr class="mt-0 mb-0 " />
+<!-- End Divider -->
+
 <!-- Contact Section -->
 <section class="page-section" id="contact">
     <div class="container relative">
