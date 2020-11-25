@@ -49,7 +49,9 @@
 			the_posts_pagination( array(
 				'prev_text'          => __( 'Previous page', 'arkakapi' ),
 				'next_text'          => __( 'Next page', 'arkakapi' ),
-				'screen_reader_text' => ' '
+				'screen_reader_text' => ' ',
+				'base'               => '%_%',
+				'format'             => '?paged=%#%',
 			) );
 			?>
         </div>
